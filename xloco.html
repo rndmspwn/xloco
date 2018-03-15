@@ -1,0 +1,112 @@
+-<!DOCTYPE html>
+<html>
+<body>
+
+<p>XLOCO</p>
+
+<p id="TEST"></p>
+
+<script>
+
+var loco = { "precio": "decimal",
+"liminf": "decimal",
+"limsup": "decimal",
+"tasa": "decimal",
+"fija": "decimal",
+"isan": "decimal" }, h;
+
+for (x in loco) {
+	
+    document.getElementById("TEST").innerHTML += "var &nbsp"+ x + "<br>" ;
+    
+
+
+}
+loco.precio=100000;
+h=loco.precio;
+
+
+document.getElementById("TEST").innerHTML +="<br>Calcular Isan<br>precio = "+ h+"<br>"; 
+document.getElementById("TEST").innerHTML +="¿es 1?<br>";
+if(h<75098.87)
+{
+	var loco = {
+"liminf": .01,
+"limsup": 75098.87,
+"tasa": .02,
+"fija": 0 };
+	
+     document.getElementById("TEST").innerHTML +=  "<br>Es nivel 1: <br> if ("+ h +"<75098.87)<br>";
+for (x in loco) {
+	
+    document.getElementById("TEST").innerHTML +=  x + "=" +loco[x]+ "<br>" ;
+    
+}
+
+}
+
+else { document.getElementById("TEST").innerHTML +="¿es 2?";
+		if(h<90118.61){
+       	var loco = {
+		"liminf": 75098.88,
+		"limsup": 90118.61,
+		"tasa": .05,
+		"fija": 1501.96 };
+	
+     document.getElementById("TEST").innerHTML +=  "<br>Es nivel 2: <br> if ("+ h +"<90118.61)<br>";
+for (x in loco) {
+	
+    document.getElementById("TEST").innerHTML +=  x + "=" +loco[x]+ "<br>" ;
+    
+}}
+	else{
+    	document.getElementById("TEST").innerHTML +="<br>¿es 3?";
+        if(h<105138.43){ 	
+		var loco = {
+		"liminf": 90118.62,
+		"limsup": 105138.43,
+		"tasa": .1,
+		"fija":  2252.97 };
+         document.getElementById("TEST").innerHTML +=  "<br>Es nivel 3: <br> if ("+ h +"< 105138.43)<br>";
+for (x in loco) {
+	
+    document.getElementById("TEST").innerHTML +=  x + "=" +loco[x]+ "<br>" ;
+    
+}
+	}	
+    else{
+    	document.getElementById("TEST").innerHTML +="<br>¿es 4?";
+         if(h<135117.89){ 	
+		var loco = {
+		"liminf": 105138.44,
+		"limsup": 135177.89,
+		"tasa": .15,
+		"fija":  3754.94 };
+         document.getElementById("TEST").innerHTML +=  "<br>Es nivel 4: <br> if ("+ h +"<135177.89)<br>";
+for (x in loco) {
+	
+    document.getElementById("TEST").innerHTML +=  x + "=" +loco[x]+ "<br>" ;
+    
+}
+}
+else {document.getElementById("TEST").innerHTML +="<br>entonces es 5:";
+var loco = {
+		"liminf": 135177.90,
+		"limsup": 135177.89,
+		"tasa": .17,
+		"fija":  8260.86 };
+         document.getElementById("TEST").innerHTML +=  "<br>Es nivel 5:<br>";
+for (x in loco) {
+	
+    document.getElementById("TEST").innerHTML +=  x + "=" +loco[x]+ "<br>" ;
+    
+}}
+
+}
+}
+    }
+
+</script>
+
+</body>
+</html>

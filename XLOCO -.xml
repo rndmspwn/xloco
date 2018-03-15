@@ -1,0 +1,154 @@
+<xloco>
+    <usuario nbusuario="profe">
+        <ontologia nbontologia="contador">
+            <ideal nbideal="isan">
+<atributos>
+                    <atributo nbatributo="precio" tipo="decimal"/>
+                    <atributo nbatributo="liminf" tipo="decimal"/>
+                    <atributo nbatributo="limsup" tipo="decimal"/>
+                    <atributo nbatributo="tasa" tipo="decimal"/>
+                    <atributo nbatributo="fija" tipo="decimal"/>
+                    <atributo nbatributo="isan" tipo="decimal"/>
+ </atributos>
+  <metodos>
+                    <metodo nbmetodo="calcular_isan">
+                        <asignacion>
+                            <variable>precio</variable>
+                            <operando>200000</operando>
+                        </asignacion>
+                        <decision>
+                            <condicion>precio&amplt;75098.87</condicion>
+                            <verdadero>
+                                <metodo nbmetodo="es_nivel_1">
+                                    <asignacion>
+                                        <variable>tasa</variable>
+                                        <operando>.02</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>fija</variable>
+                                        <operando>0.00</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>liminferior</variable>
+                                        <operando>0.01</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>limsuperior</variable>
+                                        <operando>75098.87</operando>
+                                    </asignacion>
+                                </metodo>
+                            </verdadero>
+                            <falso>  
+              <metodo nbmetodo="¿es_2?">
+                  <decision>
+                            <condicion>precio&amplt;90118.61)</condicion>
+                            <verdadero>
+                                <metodo nbmetodo="es_nivel_2">
+                                    <asignacion>
+                                        <variable>tasa</variable>
+                                        <operando>.05</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>fija</variable>
+                                        <operando>1501.96</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>liminferior</variable>
+                                        <operando>75098.88</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>limsuperior</variable>
+                                        <operando>90118.61</operando>
+                                    </asignacion>
+                                </metodo>
+                            </verdadero>
+                            <falso>   
+       <metodo nbmetodo="¿es_3?">
+                 <decision>
+                            <condicion>precio&amplt;105138.43</condicion>
+                            <verdadero>
+                                <metodo nbmetodo="es_nivel_3">
+                                    <asignacion>
+                                        <variable>tasa</variable>
+                                        <operando>.10</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>fija</variable>
+                                        <operando>2252.97</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>liminferior</variable>
+                                        <operando>98118.62</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>limsuperior</variable>
+                                        <operando>105138.43</operando>
+                                    </asignacion>
+                                </metodo>
+                            </verdadero>
+    
+                       <falso>
+      <metodo nbmetodo="¿es_4?">
+                 <decision>
+                            <condicion>precio&amplt;135117.89</condicion>
+                            <verdadero>
+                                <metodo nbmetodo="es_nivel_4">
+                                    <asignacion>
+                                        <variable>tasa</variable>
+                                        <operando>.15</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>fija</variable>
+                                        <operando>3754.94</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>liminferior</variable>
+                                        <operando>105138.44</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>limsuperior</variable>
+                                        <operando>135177.89</operando>
+                                    </asignacion>
+                                </metodo>
+                            </verdadero>
+    
+                       <falso>
+                                <metodo nbmetodo="es_nivel_5">
+                                    <asignacion>
+                                        <variable>tasa</variable>
+                                        <operando>0.17</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>fija</variable>
+                                        <operando>8260.86</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>liminferior</variable>
+                                        <operando>135177.90</operando>
+                                    </asignacion>
+                                    <asignacion>
+                                        <variable>limsuperior</variable>
+                                        <operando>135177.89</operando>
+                                    </asignacion>
+                       *             <asignacion>
+                       *                 <variable>limsuperior</variable>
+                       *                 <operando>135177.89</operando>
+                       *             </asignacion>
+                                </metodo>
+                      </falso>
+</decision>
+</metodo>
+</falso>
+</decision>
+</metodo>
+</falso>
+</decision>
+</metodo>
+</falso>
+</decision>
+</metodo>
+</metodos>
+</ideal>
+</ontologia>
+</usuario>
+</xloco>
